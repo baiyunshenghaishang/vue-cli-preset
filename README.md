@@ -26,7 +26,7 @@
 
 ### browserlistsrc
 
-修改了 browserlistsrc，主要是增加安卓和 ios
+修改了 browserlistsrc，主要是增加安卓和 ios,但是好像无法覆盖
 
 ### vue.config.js
 
