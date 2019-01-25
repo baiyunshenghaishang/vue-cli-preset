@@ -13,7 +13,7 @@
   "plugins": {
     "@vue/cli-plugin-babel": {},
     "@vue/cli-plugin-eslint": {
-      "config": "airbnb",
+      "config": "prettier",
       "lintOn": ["save", "commit"]
     }
   }
