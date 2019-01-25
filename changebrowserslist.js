@@ -1,5 +1,4 @@
-const browserslistrc = require('./template/.browserslistrc')
+const browserslistrc = require('./browserslistrc.config')
 module.exports = function(file, ejs) {
-  console.log(typeof browserslistrc)
-  file['.browserslistrc'] = String(browserslistrc)
+  file['.browserslistrc'] = browserslistrc.join(' , ')
 }
