@@ -1,4 +1,4 @@
-import browserslistrc from './template/.browserslistrc'
+const browserslistrc = require('./template/.browserslistrc')
 module.exports = function(file, ejs) {
   file['.browserslistrc'] = browserslistrc
 }
