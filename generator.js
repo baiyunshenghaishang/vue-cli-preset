@@ -2,6 +2,9 @@ const changebrowserslistrc = require('./changebrowserslist.js')
 module.exports = (api, options, rootOptions) => {
   // 修改 `package.json` 里的字段
   api.extendPackage({
+    scripts: {
+      start: 'npm run serve'
+    },
     devDependencies: {
       vconsole: '^3.2.0'
     }
