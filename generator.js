@@ -9,8 +9,8 @@ module.exports = (api, options, rootOptions) => {
       vconsole: '^3.2.0'
     }
   })
-  // 复制并用 ejs 渲染 `./template` 内所有的文件
-  // api.render('./template')
+  // 复制并用 ejs 渲染 `./config` 内所有的文件
+  api.render('./config')
   api.postProcessFiles(changebrowserslistrc)
   if (options.foo) {
     // 有条件地生成文件
