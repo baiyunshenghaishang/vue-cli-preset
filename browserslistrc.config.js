@@ -1,7 +1,0 @@
-module.exports = [
-    ' > 1%',
-    'last 4 versions',
-    'not ie <= 8',
-    'iOS >= 8',
-    'Android >= 4',
-]

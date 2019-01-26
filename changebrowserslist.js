@@ -1,4 +1,6 @@
-const browserslistrc = require('./browserslistrc.config')
+const fs = require('fs')
+
 module.exports = function(file, ejs) {
-  file['.browserslistrc'] = browserslistrc.join(' \n ')
+  let browserslistconfig = fs.readFileSync('./template/.browserslistrc', 'utf8')
+  file['.browserslistrc'] = browserslistconfig
 }
