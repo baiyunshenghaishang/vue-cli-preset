@@ -14,9 +14,6 @@ module.exports = (api, options, rootOptions) => {
   //   './.prettierrc':'./template/_prettierrc',
   // })
   api.render('./rootFile')
-  console.log(options)
-  console.log(rootOptions)
-  console.log(file)
   api.postProcessFiles(changebrowserslistrc)
   if (options.lib) {
     // 有条件地生成文件
@@ -24,7 +21,9 @@ module.exports = (api, options, rootOptions) => {
       './src': './lib'
     })
     api.extendPackage({
-      scripts: {}
+      scripts: {
+        build: `vue-cli-service build --target lib --name ${rootOptions.projectName} ./lib`
+      }
     })
   }
 }
