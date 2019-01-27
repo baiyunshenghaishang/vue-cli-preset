@@ -1,5 +1,8 @@
 ### vue-cli 的 preset 配置
 
+### 配置注意点
+generator只能在git repo中有效，本地文件调试无效
+
 ### preset
 
 ```json
@@ -31,3 +34,4 @@
 ### vue.config.js
 
 配置自动打开浏览器
+

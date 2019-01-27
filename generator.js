@@ -13,7 +13,7 @@ module.exports = (api, options, rootOptions) => {
   // api.render({
   //   './.prettierrc':'./template/_prettierrc',
   // })
-  api.render('./template/_prettierrc')
+  // api.render('./template/_prettierrc')
   api.render('./template/vue.config.js')
 
   api.postProcessFiles(changebrowserslistrc)
