@@ -17,9 +17,7 @@ module.exports = (api, options, rootOptions) => {
   api.postProcessFiles(changebrowserslistrc)
   if (options.lib) {
     // 有条件地生成文件
-    api.render({
-      './src': './lib'
-    })
+    api.render('./lib')
     api.extendPackage({
       scripts: {
         build: `vue-cli-service build --target lib --name ${rootOptions.projectName} ./lib`
