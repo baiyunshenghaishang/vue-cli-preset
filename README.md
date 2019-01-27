@@ -2,6 +2,7 @@
 
 ### 配置注意点
 generator只能在git repo中有效，本地文件调试无效
+复制文件目录名使用template好像会有缓存，改用rootFile，src目录文件使用srcFile
 
 ### preset
 
