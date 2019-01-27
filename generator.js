@@ -13,7 +13,7 @@ module.exports = (api, options, rootOptions) => {
   // api.render({
   //   './.prettierrc':'./template/_prettierrc',
   // })
-  api.render('./template')
+  api.render('./rootFile')
 
   api.postProcessFiles(changebrowserslistrc)
   if (options.foo) {
