@@ -20,7 +20,7 @@ module.exports = (api, options, rootOptions) => {
     api.render('./libFile')
     api.extendPackage({
       scripts: {
-        build: `vue-cli-service build --target lib --name ${rootOptions.projectName} ./lib`
+        build: `vue-cli-service build --target lib --name ${rootOptions.projectName} ./lib/index.js`
       }
     })
   }
