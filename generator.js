@@ -14,7 +14,8 @@ module.exports = (api, options, rootOptions) => {
   //   './.prettierrc':'./template/_prettierrc',
   // })
   api.render('./rootFile')
-  api.postProcessFiles(changebrowserslistrc)
+  // api.postProcessFiles(changebrowserslistrc)
+  api.render('./.browserlistsrc')
   if (options.lib) {
     // 有条件地生成文件
     api.render('./libFile')
