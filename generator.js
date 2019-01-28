@@ -13,7 +13,7 @@ module.exports = (api, options, rootOptions) => {
   // api.render({
   //   './.prettierrc':'./template/_prettierrc',
   // })
-  api.render('./rootFile')
+  api.render('./file')
   // api.postProcessFiles(changebrowserslistrc)
   if (options.lib) {
     // 有条件地生成文件
