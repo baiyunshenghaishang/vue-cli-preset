@@ -15,7 +15,6 @@ module.exports = (api, options, rootOptions) => {
   // })
   api.render('./rootFile')
   // api.postProcessFiles(changebrowserslistrc)
-  api.render('./.browserlistsrc')
   if (options.lib) {
     // 有条件地生成文件
     api.render('./libFile')
