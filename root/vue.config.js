@@ -1,4 +1,7 @@
 module.exports = {
+    pages: {
+        index: './test/index.js'
+    },
     devServer: {
         open: true
     },
