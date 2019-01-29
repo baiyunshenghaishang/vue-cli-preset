@@ -10,11 +10,11 @@ module.exports = (api, options, rootOptions) => {
     }
   })
   // 复制并用 ejs 渲染 `./template` 内所有的文件
-  api.render('./file')
+  api.render('./root')
   // api.postProcessFiles(changebrowserslistrc)
   if (options.lib) {
     // 有条件地生成文件
-    api.render('./libFile')
+    api.render('./lib')
     api.extendPackage({
       scripts: {
         build: `vue-cli-service build --target lib --name ${rootOptions.projectName} ./lib/index.js`
