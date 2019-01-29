@@ -1,13 +1,13 @@
 module.exports = {
     pages: {
-        index: './test/index.js'
+        index: './test/index.js',
     },
     devServer: {
-        open: true
+        open: true,
     },
     configureWebpack: {
         resolve: {
-            extensions: ['.js', '.json', '.vue']
-        }
-    }
+            extensions: ['.js', '.json', '.vue'],
+        },
+    },
 }

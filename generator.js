@@ -3,11 +3,11 @@ module.exports = (api, options, rootOptions) => {
     // 修改 `package.json` 里的字段
     api.extendPackage({
         scripts: {
-            start: 'npm run serve'
+            start: 'npm run serve',
         },
         devDependencies: {
-            vconsole: '^3.2.0'
-        }
+            vconsole: '^3.2.0',
+        },
     })
     // 复制并用 ejs 渲染 `./template` 内所有的文件
     api.render('./root')
@@ -17,9 +17,11 @@ module.exports = (api, options, rootOptions) => {
         api.render('./forlib')
         api.extendPackage({
             scripts: {
-                build: `vue-cli-service build --target lib --name ${rootOptions.projectName} ./source/index.js`
+                build: `vue-cli-service build --target lib --name ${
+                    rootOptions.projectName
+                } ./source/index.js`,
             },
-            main: `./dist/${rootOptions.projectName}.umd.min.js`
+            main: `./dist/${rootOptions.projectName}.umd.min.js`,
         })
     }
 }

@@ -1,15 +1,15 @@
 {
-  "useConfigFiles": true,
-  "useTaobaoRegistry": true,
-  "router": true,
-  "routerHistoryMode": false,
-  "vuex": true,
-  "cssPreprocessor": "sass",
-  "plugins": {
-    "@vue/cli-plugin-babel": {},
-    "@vue/cli-plugin-eslint": {
-      "config": "prettier",
-      "lintOn": ["save", "commit"]
+    "useConfigFiles": true,
+    "useTaobaoRegistry": true,
+    "router": true,
+    "routerHistoryMode": false,
+    "vuex": true,
+    "cssPreprocessor": "sass",
+    "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+            "config": "prettier",
+            "lintOn": ["save", "commit"]
+        }
     }
-  }
 }
